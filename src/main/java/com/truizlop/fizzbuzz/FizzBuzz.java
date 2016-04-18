@@ -3,7 +3,11 @@ package com.truizlop.fizzbuzz;
 public class FizzBuzz {
 
     public String run(int number) {
-        return String.format("%d", number);
+        if(number % 3 == 0){
+            return "fizz";
+        }else{
+            return String.format("%d", number);
+        }
     }
 
 }
