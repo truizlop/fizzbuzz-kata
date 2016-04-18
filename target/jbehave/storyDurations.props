@@ -1,0 +1,6 @@
+#org.jbehave.core.embedder.StoryManager
+#Mon Apr 18 17:52:48 CEST 2016
+threads=1
+total=0
+threadAverage=0
+fizzbuzz.story=0
