@@ -13,6 +13,7 @@ public class FizzBuzzTest {
     private static final String NOT_MULTIPLE_OF_THREE_OR_FIVE_STRING = "2";
     private static final int MULTIPLE_OF_THREE = 9;
     private static final int MULTIPLE_OF_FIVE = 20;
+    private static final int MULTIPLE_OF_THREE_AND_FIVE = 45;
 
     private FizzBuzz fizzBuzz;
 
@@ -34,5 +35,10 @@ public class FizzBuzzTest {
     @Test
     public void shouldReturnBuzzForMultiplesOfFive(){
         assertThat(fizzBuzz.run(MULTIPLE_OF_FIVE), is(equalTo("buzz")));
+    }
+
+    @Test
+    public void shouldReturnFizzBuzzForMultiplesOfThreeAndFive(){
+        assertThat(fizzBuzz.run(MULTIPLE_OF_THREE_AND_FIVE), is(equalTo("fizzbuzz")));
     }
 }
